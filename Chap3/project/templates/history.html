@@ -1,0 +1,9 @@
+{% extends "home.html" %}
+{% block content %}
+    <p align="center">历史查询记录</p>
+    <p align="center">
+        {% for weather_data in history_list %}
+        {{ weather_data }}<br>
+        {% endfor %}
+    </p>
+{% endblock %}
